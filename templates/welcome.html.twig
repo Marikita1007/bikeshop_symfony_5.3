@@ -1,5 +1,10 @@
-<div>Hello!</div>
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<h1>Hello!</h1>
 
 {# {{day}} comes from WelcomeController.php #}
 <p>Welcome to out shop. Today is <strong>{{ day }}</strong>.</p>
 <p>Here is a variable scripttag from WelcomeController.php By using twig 'raw' it works as script<strong>{{ scripttag | raw }}</strong></p>
+
+{% endblock %}
