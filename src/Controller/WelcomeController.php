@@ -14,7 +14,8 @@ class WelcomeController extends AbstractController
     public function homepage(): Response
     {
         return $this->render('welcome.html.twig', [
-            'day' => date('l')// It shows the day
+            'day' => date('l'),// It shows the day
+            'scripttag'=> '<script>console.log("This is a script tag from WelcomeController.php")</script>'
         ]);
     }
 }
